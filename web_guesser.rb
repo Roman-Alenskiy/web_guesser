@@ -8,7 +8,9 @@ get '/' do
 end
 
 def check_guess(guess)
+    return "" if guess == ""
     guess = guess.to_i
+    return "" if guess == 0
     return "You are close! (too high)" if (guess - settings.number).between?(1,5)
     return "You are close! (too low)" if (guess - settings.number).between?(-5,-1)
     return "Too high!" if guess > settings.number
