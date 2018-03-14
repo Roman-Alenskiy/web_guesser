@@ -19,7 +19,7 @@ get '/' do
         @@attempts = 5
         settings.is_guessed = false
     end
-    erb :index, :locals => {:number => settings.number, :message => message, :attempts => @@attempts}
+    erb :index, :locals => {:number => settings.number, :message => message, :attempts => @@attempts, :cheat => params['cheat']}
 end
 
 def check_guess(guess)

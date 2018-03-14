@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Web Guesser</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="<%= url("/style.css") %>">
 	</head>
 
     <body>
@@ -23,6 +23,11 @@
             </main>
 
             <aside class="left">
+                <p class="cheat-mode">
+                    <% if cheat%>
+                        <%= "Cheat mode: ON. Answer is #{number}" %>
+                    <% end%>
+                </p>
             </aside>
 
             <aside class="right">
@@ -32,3 +37,4 @@
             </footer>
         </div>
     </body>
+</html>
