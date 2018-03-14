@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Web Guesser</title>
-		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 
     <body>
@@ -14,6 +14,7 @@
 
             <main class="main">
                 <p class="description">There is number from 0 to 100, try to guess it!</p>
+                <p class="attempts-counter">Number of attempts: <%= attempts %></p>
                 <form>
                     <input class="text-field" type='text' name='guess' autofocus/></br>
                     <input class="button" type='submit' value='Guess!' />
@@ -31,4 +32,3 @@
             </footer>
         </div>
     </body>
-</html>

@@ -10,7 +10,7 @@ body {
     grid-area: header;
     padding: 25px 0;    
     background-color: #3a3e4d;
-    color: #fff;
+    color:white;
 }
 .footer {
     grid-area: footer;
@@ -48,6 +48,14 @@ body {
 .description {
     padding-bottom: 70px;
     font-size: 20px;
+}
+.attempts-counter {
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-style: italic;
+}
+.message {
+    font-size: 22px;
 }
 
 @media screen and (max-width: 600px) {
